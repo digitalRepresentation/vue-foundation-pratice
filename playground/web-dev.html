@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    test1
+    <div id="app">
+    </div>
+    <script>
+        //$('#app');
+        var div = document.querySelector('#app');
+        var str = 'hello World!'
+        div.innerHTML = str;
+        console.log(div);
+    </script>
 </body>
 </html>

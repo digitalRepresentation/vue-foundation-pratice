@@ -12,15 +12,28 @@
         var div = document.querySelector('#app');
         var viewModel = {};
 
-        Object.defineProperty(viewModel, 'str', {
-            get: function() {
-                console.log('Access');
-            },
-            set: function (newValue) {
-                console.log('Assignment', newValue);
+        (function() {
+
+            function init() {
+                Object.defineProperty(viewModel, 'str', {
+                    get: function() {
+                        console.log('Access');
+                    },
+                    set: function (newValue) {
+                        console.log('Assignment', newValue);
+                        render(newValue);
+                    }
+                });
+            }
+
+            function render(newValue) {
                 div.innerHTML = newValue;
             }
-        });
+
+            init();
+        })();
+
+        
     </script>
 </body>
 </html>

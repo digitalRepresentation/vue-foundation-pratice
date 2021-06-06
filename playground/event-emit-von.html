@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="app">
-        <app-helper v-on:pass="logText"></app-helper>
+        <app-header v-on:pass="logText"></app-header>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -18,7 +18,7 @@
             methods: {
                 passEvent: function() {
                     this.$emit('pass');
-                }
+                } 
             }
         }
 

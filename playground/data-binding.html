@@ -16,9 +16,13 @@
         new Vue({
             el: '#app',
             data: {
-                num: 10,
-                doubleNum: 10 * 2
+                num: 10
             },
+            computed: {
+                doubleNum: function() {
+                    return this.num * 2;
+                }
+            }
         })
     </script>
 

@@ -21,7 +21,8 @@ export default {
     }
   },
   methods: {
-    submitForm: function() {
+    submitForm: function(event) {
+      event.preventDefault();
       console.log(this.username, this.password);
     }
   }

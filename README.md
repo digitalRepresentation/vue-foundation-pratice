@@ -1,2 +1,3 @@
 # vue-foundation-pratice
-뷰 소개
+Vuex
+CLI
